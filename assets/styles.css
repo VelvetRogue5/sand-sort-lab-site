@@ -62,6 +62,17 @@ a:hover {
   font-weight: 800;
 }
 
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-weight: 700;
+}
+
+.nav-links a[aria-current="page"] {
+  color: var(--ink);
+}
+
 .brand img,
 .hero-badge img,
 .redirect-card img {
@@ -77,6 +88,10 @@ a:hover {
   width: min(1080px, calc(100% - 32px));
   margin: 0 auto;
   padding: 76px 0 34px;
+}
+
+.support-hero {
+  padding-bottom: 44px;
 }
 
 .eyebrow {
@@ -178,6 +193,10 @@ h2 {
   padding: 18px 0 72px;
 }
 
+.support-content {
+  padding-top: 8px;
+}
+
 .policy-section {
   padding: 28px;
 }
@@ -256,6 +275,15 @@ h2 {
     grid-template-columns: 1fr;
     width: min(100% - 24px, 1080px);
     padding-top: 44px;
+  }
+
+  .top-nav {
+    gap: 12px;
+  }
+
+  .nav-links {
+    gap: 12px;
+    font-size: 0.95rem;
   }
 
   h1 {
